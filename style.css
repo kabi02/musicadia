@@ -1,0 +1,320 @@
+html {
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Fonts*/
+@font-face {
+    font-family: Outfit;
+    src: url('Outfit-VariableFont_wght.ttf'),
+         url('Outfit-VariableFont_wgth.eot');
+}
+/*Top Banner*/
+.banner-top{
+    width:100%;
+    height: 120px;
+    background-color: aquamarine;
+}
+.t_button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: rgb(29, 29, 29);
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Outfit;
+    cursor: pointer;
+    position: relative;
+    top:35px;
+    right:10px;
+    float: right;
+}
+
+.button_signup{
+    background-color: #303030;
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: Outfit;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+    right: 20px;
+    float: right;
+}
+
+/*Login and Signup*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  .container form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+  }
+  
+  .container form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+  }
+  .container form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  .container form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  .container form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #303030;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  .container form .input-box input:focus ~ .underline::after,
+  .container form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .container form .button{
+    margin: 40px 0 20px 0;
+  }
+  .container .input-box input[type="submit"]{
+    background: rgb(37, 37, 37);
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .container .option{
+    font-size: 14px;
+    text-align: center;
+  }
+
+/*Slideshow*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #2ff588;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*Bottom Banner*/
+.banner-bottom {
+    margin-top: 70px;
+    width: 100%;
+    height: 60px;
+    background-color: #121212;
+}
+
+/*Contact Us Form*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+/* Add a background color and some padding around the form */
+.container-contact {
+    border-radius: 15px;
+    background-color: (0,0,0,0);
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    padding: 25px 30px;
+    position: relative;
+    left: 18%;
+    top: 30px;
+}
+
+/*Products*/
+.prod-name {
+    font-family: Outfit;
+}
+
+.p-price {
+    font-family: Outfit;
+}
+
+/*Buy Button*/
+.buy-button {
+    background-color: #303030;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: Outfit;
+    cursor: pointer;
+    position: relative;
+}
+/*Guitars*/
+
+.container-g {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.guitar {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+/*Hover Effect*/
+
+.guitar img {
+    transition: 0.3s all;
+}
+
+.guitar:hover img {
+    opacity: 0.7;
+}
+
+/*Buy Button*/
+
+.guitar .buy-button {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.guitar:hover .buy-button {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*Orchestra 500D*/
+.guitar1 select{
+    width: 150px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.guitar1 input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
